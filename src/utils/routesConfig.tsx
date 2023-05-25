@@ -7,8 +7,8 @@ const routesConfig = [
     path: '/',
     element: (
       <>
-        <h1>App</h1>
         {/* Header, sidebar and other fixed components go here */}
+        <div className="blur" />
         <Outlet />
       </>
     ),
