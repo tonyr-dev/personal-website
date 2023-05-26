@@ -7,9 +7,12 @@ const routesConfig = [
     path: '/',
     element: (
       <>
-        <h1>App</h1>
         {/* Header, sidebar and other fixed components go here */}
-        <Outlet />
+        <div className="flex justify-center items-center w-screen h-screen backdrop-blur-lg">
+          <main className=" w-[50rem] h-5/6 bg-slate-800 rounded-xl drop-shadow-lg bg-gradient-to-tr from-slate-950 to-slate-800 bg-gradient-to-r">
+            <Outlet />
+          </main>
+        </div>
       </>
     ),
     errorElement: <ErrorPage />,
