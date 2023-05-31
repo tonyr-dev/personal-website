@@ -10,7 +10,7 @@ export default function Avatar() {
         borderRadius: '50%',
         width: '350px',
         height: '350px',
-        backgroundImage: 'url(../../../public/images/profile.png)',
+        backgroundImage: 'url(/images/profile.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
