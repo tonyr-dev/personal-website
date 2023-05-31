@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
 interface TypingAnimationProps {
@@ -28,14 +27,14 @@ function TypingAnimation({
       }, typingSpeed);
     };
 
-    const delayTimeout = setTimeout(startTyping, delay); // Delay before starting the typing animation
+    const delayTimeout = setTimeout(startTyping, delay * 100); // (Delay * 100) before starting the typing animation
 
     return () => {
       clearTimeout(delayTimeout);
     };
   }, [sentence, typingSpeed, delay]);
 
-  return <motion.h1>{text}</motion.h1>;
+  return <span>{text}</span>;
 }
 
 export default TypingAnimation;
