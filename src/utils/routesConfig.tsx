@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { Outlet } from 'react-router-dom';
 
 import ErrorPage from '../pages/Error';
